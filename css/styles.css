@@ -42,15 +42,18 @@ h1 {
 }
 
 #navbar ul li {
-    padding: 1.5rem;
+    display: inline-block;
 }
 
 #navbar ul li a {
-    transition: border-bottom 0.1s ease-in-out;
+    display: block;
+    padding: 1.4rem;
+    transition: background-color 0.1s ease-in-out;
 }
 
 #navbar ul li a:hover {
-    border-bottom: 2px solid var(--main-font);
+    color: var(--nav-bg);
+    background-color: var(--main-font);
 }
 
 #welcome-section {
@@ -82,5 +85,5 @@ h1 {
     padding-top: 5%;
     padding-bottom: 1%;
     border-bottom: var(--main-font) 2px solid;
-    margin: 0 33%;
+    margin: 0 25vw;
 }
