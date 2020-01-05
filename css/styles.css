@@ -63,15 +63,13 @@ h1 {
     align-items: center;
     justify-content: center;
     font-family: 'Audiowide', cursive;
-    text-shadow: 5px 5px 5px var(--nav-bg);
-    background-image:  linear-gradient(rgba(45, 52, 54, 0.4), rgba(45, 52, 54, 0.4)), url("https://bit.ly/35dPw5U");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-image.png");
     background-size: cover;
     background-attachment: fixed;
 }
 
 #projects {
     background-color: var(--nav-bg);
-    height: 1000px;
 }
 
 #projects h1 {
@@ -81,4 +79,9 @@ h1 {
     padding-bottom: 1%;
     border-bottom: var(--main-font) 2px solid;
     margin: 0 25vw;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
