@@ -1,9 +1,10 @@
 :root {
-    --nav-bg: #303952;
+    --nav-bg: #2c2c54;
     --main-font: #ffeaa7;
     --hero-shade: rgba(0, 0, 0, 0.5);
     --project-bg: #2d3436;
     --project-title: #2c3e50;
+    --span-color: #fab1a0;
 }
 
 * {
@@ -25,7 +26,6 @@ ul {
 
 a {
     text-decoration: none;
-    box-sizing: inherit;
 }
 
 h1 {
@@ -73,6 +73,10 @@ h1 {
 
 #projects {
     background-color: var(--project-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
 }
 
 #projects h1 {
@@ -108,4 +112,41 @@ h1 {
 .project-title {
     padding-top: 3%;
     padding-bottom: 4%;
+}
+
+.project-tile .project-title > span {
+    color: var(--project-title);
+    transition: color ease 0.5s;
+}
+
+.project-tile:hover .project-title > span {
+    color: var(--span-color);
+}
+
+.button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1% 2%;
+    background-color: var(--project-title);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 2px;
+    transition: ease 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--nav-bg);
+}
+
+.btn > i {
+    transform: translateX(0);
+    transition: transform ease 0.5s;
+}
+
+.btn:hover > i {
+    transform: translateX(2px);
 }
