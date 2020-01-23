@@ -3,8 +3,9 @@
     --main-font: #ffeaa7;
     --hero-shade: rgba(0, 0, 0, 0.5);
     --project-bg: #2d3436;
-    --project-title: #2c3e50;
+    --project-title: #2b3d4f;
     --span-color: #fab1a0;
+    --main-black: #000000;
 }
 
 * {
@@ -149,4 +150,34 @@ h1 {
 
 .btn:hover > i {
     transform: translateX(2px);
+}
+
+#contact {
+    background-color: var(--project-title);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.link {
+    display: inline-block;
+    margin: 0 3%;
+    padding: 1.5% 0;
+    text-shadow: 1px 1px 1px var(--main-black);
+    transform: scale(1);
+    transition: transform ease 0.5s;
+}
+
+.link:hover {
+    transform: scale(1.3);
 }
