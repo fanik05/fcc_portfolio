@@ -198,3 +198,13 @@ footer {
     padding: 3% 0;
     border-top: solid 3px var(--span-color);
 }
+
+.fcc-link {
+    display: inline-block;
+    transform: scale(1);
+    transition: transform ease 0.5s;
+}
+
+.fcc-link:hover {
+    transform: scale(1.1);
+}
